@@ -1,7 +1,6 @@
 from flask import Flask, request
 
 app = Flask(__name__)
-app.config['DEBUG'] = True
 
 @app.route("/", methods=['POST'])
 def print_form_values():
