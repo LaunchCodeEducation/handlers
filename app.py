@@ -1,4 +1,8 @@
 from flask import Flask, request
+import logging
+import sys
+
+logging.basicConfig(stream=sys.stderr)
 
 app = Flask(__name__)
 
