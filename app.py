@@ -26,8 +26,11 @@ TEMPLATE = """
 @app.route("/request-parrot", methods=['POST', 'GET'])
 def print_form_values():
     params = ""
-    for field in request.form.keys():
-        params += "<li><b>{key}</b>: {value}</li>".format(key=field, value=request.form[field])
+    for field in request.values.keys():
+        value = request.values.getlist(field)
+        if len(value) == 1:
+            value = value[0]
+        params += "<li><b>{key}</b>: {value}</li>".format(key=field, value=value)
 
     return TEMPLATE.format(req_type = request.method,
                 params=params)
