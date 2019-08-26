@@ -8,7 +8,7 @@
              "Physician", "Chemical Engineer"
        ],
        "hoursInSpace": 190,
-       "picture": "mae-jemison.jpg"
+       "picture": "https://handlers.education.launchcode.org/static/images/mae-jemison.jpg"
     },
     {
        "id": 2,
