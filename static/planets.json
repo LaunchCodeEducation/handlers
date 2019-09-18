@@ -37,7 +37,7 @@
         "star": "K2-18",
         "distance": "110 light years from Earth",
         "image": "https://www.nasa.gov/sites/default/files/thumbnails/image/heic1916a.jpg",
-        "moons": 0
+        "moons": "unknown"
     },
     {
         "name": "Jupiter/Europa",
